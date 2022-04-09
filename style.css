@@ -84,3 +84,44 @@ html {
 a:hover {
     text-decoration: underline;
 }
+
+#res-block {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#res-button {
+    text-decoration: underline;
+}
+
+#sad-dog {
+    display: block;
+    /* border-radius: 50%; */
+    height: 50vw;
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.center {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+@media (max-width:960px) {
+    #res-block  {
+        visibility: visible;
+    } 
+
+    body {
+        overflow: hidden;
+    }
+}
