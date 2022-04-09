@@ -116,7 +116,7 @@ a:hover {
     -webkit-transform: translate(-50%, -50%);
 }
 
-@media (max-width:960px) {
+@media (max-width:985px) {
     #res-block  {
         visibility: visible;
     } 
