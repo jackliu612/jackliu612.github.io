@@ -5,8 +5,10 @@
     - [x] Create nav bar, side panel, and main content divs
     - [x] Position and format using css
 - [ ] Side Panel
-    - [ ] Add picture and format
-    - [ ] Social links 
+    - [x] Add picture and format
+    - [x] Social links 
+    - [ ] Tagline
+    - [ ] Adjust formatting?
 - [ ] About Me Main Page
 - [ ] Navbar
 - [ ] Additional pages (CV, Project links, reading list?)

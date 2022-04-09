@@ -1,5 +1,5 @@
 .nav {
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
     float: top;
     width: 100%;
@@ -19,26 +19,68 @@
     position: relative;
 }
 
+.main {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
 .side-bar {
-    background-color: green;
-    position: fixed;
+    /* background-color: green; */
+    position: sticky;
+    top: 0;
     float: left;
-    width: 25%;
+    width: 20%;
+}
+
+.pfp {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    border-radius: 50%;
+}
+
+.social {
+    margin-top: 1em;
 }
 
 .main-body {
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     position: relative;
     float: right;
-    width: 75%;
+    width: 80%;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: green;
+    min-height: 100%;
+    /* background-color: green; */
 }
 
 p {
-    color: white;
+    color: black;
+}
+
+html {
+    min-height: 100%;
+    /* background-color: aqua; */
+}
+
+.social>a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
