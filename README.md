@@ -7,8 +7,10 @@
 - [ ] Side Panel
     - [x] Add picture and format
     - [x] Social links 
-    - [ ] Tagline
+    - [x] Tagline
     - [ ] Adjust formatting?
 - [ ] About Me Main Page
 - [ ] Navbar
+    - [x] Add working links
+    - [x] Add link styling
 - [ ] Additional pages (CV, Project links, reading list?)
