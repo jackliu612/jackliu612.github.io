@@ -198,6 +198,7 @@ a:hover {
 #scrollToTop:hover {
     color: turquoise;
     background-color: white;
+    cursor: pointer;
 }
 
 /* width */
