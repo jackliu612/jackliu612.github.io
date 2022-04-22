@@ -8,7 +8,7 @@
 }
 canvas {
     position: fixed;
-    opacity: 20%;
+    /* opacity: 20%; */
 }
 
 .nav {
@@ -108,13 +108,15 @@ body {
     min-height: 100%;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-    padding-bottom: 50%;
+    padding-bottom: 100vh;
+    overflow: overlay;
     /* overflow: hidden; */
     /* background-color: green; */
 }
 
 p {
     color: black;
+    /* background-color: white; */
 }
 
 html {
@@ -187,11 +189,33 @@ a:hover {
     justify-content: center;
     margin-bottom: -12rem;
     transition: margin-bottom 0.2s;
+    background-color: turquoise;
+    color: white;
 }
 #scrollToTop.active {
     margin-bottom: 0;
 }
 #scrollToTop:hover {
-    background-color: turquoise;
-    color: white;
+    color: turquoise;
+    background-color: white;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    opacity: 0;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

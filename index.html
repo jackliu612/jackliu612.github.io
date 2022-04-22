@@ -7,10 +7,11 @@
     <script type="text/javascript" src="scripts/index.js"></script>
     <script src="https://kit.fontawesome.com/9d37b8b128.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/asteriod.js"></script>
     <script src="scripts/sketch.js"></script>
     <link rel="icon" type="image/svg+xml" href="imgs/favicon.ico">
 </head>
-<body>
+<body onload="setCanvasOpacity()">
     <div id="sketch"></div>
     <div id="res-block">
         <div class="center">           
@@ -25,6 +26,7 @@
             <div class="nav-element"><a href="files/resume.pdf"><h2>CV</h2></a></div>
             <!-- <div class="nav-element"><a>Reading</a></div> -->
         </div>
+        <hr>
     </div>
     <div class="main">
         <div class="side-bar">
@@ -73,6 +75,6 @@
             </div>
         </div>
     </div>
-    <div id="scrollToTop"><span>Go Up</span></div>
+    <div id="scrollToTop"><span><i class="fa-3x fa-solid fa-arrow-up"></i></span></div>
 </body>
 </html>
