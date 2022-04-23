@@ -44,6 +44,7 @@ canvas {
 
 .side-bar {
     /* background-color: green; */
+    background-color: white;
     position: sticky;
     top: 0;
     float: left;
@@ -72,6 +73,7 @@ canvas {
 
 .main-body {
     /* background-color: rebeccapurple; */
+    background-color: white;
     position: relative;
     float: right;
     width: 80%;
@@ -213,7 +215,10 @@ a:hover {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
     background: #888;
+    border-radius: 5px;
   }
   
   /* Handle on hover */

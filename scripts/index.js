@@ -1,16 +1,18 @@
+let transp = 1;
+
 function hideResponsiveBlocker(){
 	document.getElementById("res-block").style.visibility = "hidden";
     document.body.style.overflow = "overlay";
 }
 
 function setCanvasOpacity(){
-    if($(this).scrollTop() < $(window).height()/2){
+    if($(this).scrollTop() < $(document).height()/4){
         $("canvas").css({"opacity" : ".2"});
         $(".main").css({"opacity" : "1"});
     }
     else{
-        $("canvas").css({"opacity" : ($(this).scrollTop()-$(window).height()/2) / ($(window).height()/2)*2+.2});
-        $(".main").css({"opacity" : 1-($(this).scrollTop()-$(window).height()/2) / ($(window).height()/2)*3});
+        $("canvas").css({"opacity" : ($(this).scrollTop()-$(document).height()/4) / ($(document).height())*4+.2});
+        $(".main").css({"opacity" : 1-($(this).scrollTop()-$(document).height()/4) / ($(document).height())*8});
     }
 }
 
@@ -30,7 +32,7 @@ $(document).ready(function(){
 // });
 
 $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 2*$(window).height()/3) {
+    if ($(this).scrollTop() > 2*$(document).height()/5) {
         $("#scrollToTop").addClass("active");
     } else {
         $("#scrollToTop").removeClass("active");
