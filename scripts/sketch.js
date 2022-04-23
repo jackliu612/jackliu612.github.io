@@ -28,7 +28,7 @@ function draw() {
             let d = asteroids[i].dist(asteroids[j]);
             // console.log(d)
             if (d < threshold) {
-                strokeWeight(10*((threshold-d)/threshold)**5);
+                strokeWeight(5*((threshold-d)/threshold)**2);
                 line(asteroids[i].pos.x, asteroids[i].pos.y, asteroids[j].pos.x, asteroids[j].pos.y);
             }
                     
