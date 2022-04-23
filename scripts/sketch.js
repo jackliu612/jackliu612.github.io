@@ -17,6 +17,8 @@ function setup() {
 }
 
 function draw() {
+    $("#test").text($("#test").text() + " - " + $("canvas").css("opacity"));
+    
     background(255);
     strokeWeight(10);
     stroke(0);
