@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-    $("#test").text($("#test").text() + " - " + $("canvas").css("opacity"));
+    // $("#test").text($("#test").text() + " - " + $("canvas").css("opacity"));
     
     background(255);
     strokeWeight(10);
@@ -51,10 +51,12 @@ function draw() {
 }
 
 function windowResized() {
-    asteroids.forEach(function (a) {
-        a.reposition(size, [windowWidth, windowHeight]);
-    });
-    size = [windowWidth, windowHeight];
-    $("#test").text(size);
-    resizeCanvas(windowWidth, windowHeight);
+    if(windowHeight < 1900) {
+        resizeCanvas(windowWidth, windowHeight);
+        asteroids.forEach(function (a) {
+            a.reposition(size, [windowWidth, windowHeight]);
+        });
+        size = [windowWidth, windowHeight];
+    }
+    // $("#test").text(size);
 }
