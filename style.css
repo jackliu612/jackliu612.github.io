@@ -72,15 +72,17 @@ canvas {
 }
 
 .main-body {
-    /* background-color: rebeccapurple; */
     background-color: white;
+    /* background-color: rebeccapurple; */
     position: relative;
     float: right;
-    width: 80%;
+    width: 70%;
+    margin-right: 10%;
 }
 
 .body-content {
-    margin-right: 20%;
+    /* margin-right: 20%; */
+    /* padding-left: 1em; */
     line-height: 1.6;
     text-shadow:
     -1px -1px 0 #fff,
