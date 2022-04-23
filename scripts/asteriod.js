@@ -34,7 +34,7 @@ class Asteroid {
         push();
         noStroke();
         strokeWeight(1);
-        fill(255-(transp*255));
+        fill(255-(transp*colorMax));
         // noFill();    
         translate(this.pos.x, this.pos.y);
         ellipse(0, 0, this.r*2, this.r*2);
