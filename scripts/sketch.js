@@ -18,6 +18,10 @@ function setup() {
 
 function draw() {
     background(255);
+    strokeWeight(10);
+    stroke(0);
+    line(0,0, windowWidth, windowHeight);
+    line(0,0, windowWidth, windowHeight);
 
     // if (frameCount % 1 === 0 && asteroids.length < 100) {
     //     asteroids.push(new Asteroid(Math.ceil(Math.random() * 25 + 25)));
