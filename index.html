@@ -1,83 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <title>Jack Liu</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/index.js"></script>
-    <script src="https://kit.fontawesome.com/9d37b8b128.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="scripts/asteriod.js"></script>
-    <script src="scripts/sketch.js"></script>
+    <link href="css/index.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="imgs/favicon.ico">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
-<body onload="setCanvasOpacity()">
-    <!-- <h1 id="test" style="position: fixed;">a</h1> -->
-    <div id="sketch"></div>
-    <div id="res-block">
-        <div class="center">           
-            <p>Sorry! I don't know how to make responsive websites :(</p>
-            <img id="sad-dog" src="imgs/sad.gif">
-            <a id="res-button" onclick="hideResponsiveBlocker()">Proceed Anyways</a>
-        </div>
-    </div>
-    <div class="nav">
-        <div class="container">
-            <div class="nav-element"><a href="#"><h2>Home</h2></a></div>
-            <div class="nav-element"><a href="files/resume.pdf"><h2>CV</h2></a></div>
-            <!-- <div class="nav-element"><a>Reading</a></div> -->
-        </div>
-        <hr>
-    </div>
-    <div class="main">
-        <div class="side-bar">
-            <div class="container">
-                <img class="pfp" src="imgs/Jack_Liu.jpg">
-                <div id="tagline">
-                    <h2>Jack Liu</h2>
-                    <p>CS and Math at UVA</p>
-                    <hr>
-                </div>
-                <div class="social">
-                    <a href="mailto:jml7ctd@virginia.edu"> <!--https://www.linkedin.com/in/jack-liu-b52a621a3/-->
-                        <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> E-mail
-                    </a>
-                </div>
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/jackliu612"> <!--https://www.linkedin.com/in/jack-liu-b52a621a3/-->
-                        <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
-                    </a>
-                </div>
-                <div class="social">
-                    <a href="https://github.com/jackliu612">
-                        <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
-                    </a>
-                </div>
+
+<body>
+    <div id="text">
+        <div id="text">
+            <div class="line">
+                <a id="hover-link1" href="home.html" target="_blank" class="word fancy">
+                    UVA
+                </a>
             </div>
-        </div>
-        <div class="main-body">
-            <div class="container body-content">
-                <h1>About Me</h1>
-                <p>
-                    Hi! I am a fourth-year B.S. Computer Science and B.A. Mathematics student at the University of Virginia.
-                    My coursework has included Algorithms, Machine Learning, Operating Systems, Cryptography, and Compilers among others.
-                    I've found a love for the theoretical side of Computer Science analyzing algorithms, but also enjoy applying my practical skills on (sometimes wacky) side projects 
-                </p>
-                <p>
-                    Over the past 2022 summer I interned at Capital One as part of their Technical Internship Program.
-                    Previously, I worked at MITRE as a Data Analytics Intern with a focus on analying the COVID-19 epidemic. A summary of my work can be found <a class="body-link" href="files/MITRE_Presentation.pdf">here</a>. 
-                    I also currently teach programming classes in Python and Java for middle school students. 
-                </p>
-                <p>
-                    Outside of the classroom, I am the president of <a class="body-link" href="https://thecourseforum.com/">theCourseForum</a> which is a course review platform used by many in the University of Virginia community.
-                    I also served as the Vice President of Infrastructure prior to becoming president. 
-                    This involved managing DevOps, site maintenance, and semesterly data updates while also becoming familiar with Docker, Google Cloud, and Digital Ocean.
-                </p>
+
+            <div class="line">
+                <p class="word">Math</p>
+                <p class="word">nerd</p>
             </div>
+
+            <div class="line">
+                <p class="word">&</p>
+            </div>
+
+
+            <div class="line">
+                <a id="hover-link2" href="https://jackliu612.github.io/files/resume.pdf" target="_blank"
+                    class="word fancy">
+                    CS@Roblox
+                </a>
+            </div>
+
+
+            <div class="line">
+
+                <a id="hover-link3" href="https://thecourseforum.com/" target="_blank" class="word fancy">
+                    courseforum
+                </a>
+            </div>
+
+
         </div>
+
+        <!-- <a id="source-link" class="meta-link" href="https://www.nathansmith.design" target="_blank">
+            <i class="fa-solid fa-link"></i>
+            <span>Source</span>
+        </a>
+    
+        <a id="yt-link" class="meta-link" href="https://youtu.be/owpaafxvkjU" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+            <span>4 min tutorial</span>
+        </a> -->
     </div>
-    <div id="scrollToTop"><span><i class="fa-3x fa-solid fa-arrow-up"></i></span></div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/hover.js"></script>
+
 </html>
